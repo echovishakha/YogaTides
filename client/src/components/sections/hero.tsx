@@ -12,11 +12,11 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source
-          src="/assets/20250305_1625_Sunset_Yoga_Serenity_remix_01jnmdfzg0f58asmxfgq9y8fy9.mp4"
+          src="/assets/20250305_1625_Sunset%20Yoga%20Serenity_remix_01jnmdfzg0f58asmxfgq9y8fy9.mp4"
           type="video/mp4"
         />
         <source
-          src="/assets/20250305_1625_Sunset_Yoga_Serenity_remix_01jnmdfzfvf6h8g78h2xpnjm04.mp4"
+          src="/assets/20250305_1625_Sunset%20Yoga%20Serenity_remix_01jnmdfzfvf6h8g78h2xpnjm04.mp4"
           type="video/mp4"
         />
       </video>

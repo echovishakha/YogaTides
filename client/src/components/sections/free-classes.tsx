@@ -29,7 +29,7 @@ export default function FreeClasses() {
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         >
           <source
-            src="/assets/20250305_1625_Sunset_Yoga_Serenity_remix_01jnmdfzfvf6h8g78h2xpnjm04.mp4"
+            src="/assets/20250305_1625_Sunset%20Yoga%20Serenity_remix_01jnmdfzfvf6h8g78h2xpnjm04.mp4"
             type="video/mp4"
           />
         </video>

@@ -7,8 +7,14 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Serve static assets
-app.use('/assets', express.static(path.join(process.cwd(), 'attached_assets')));
+// Serve static assets with proper MIME types
+app.use('/assets', express.static(path.join(process.cwd(), 'attached_assets'), {
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith('.mp4')) {
+      res.setHeader('Content-Type', 'video/mp4');
+    }
+  }
+}));
 
 app.use((req, res, next) => {
   const start = Date.now();
