@@ -18,15 +18,33 @@ const classes = [
 
 export default function FreeClasses() {
   return (
-    <section className="py-16 bg-muted/50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">
+    <section className="relative py-16">
+      {/* Background Video */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source
+            src="/assets/20250305_1625_Sunset_Yoga_Serenity_remix_01jnmdfzfvf6h8g78h2xpnjm04.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div className="absolute inset-0 bg-black/60" />
+      </div>
+
+      {/* Content */}
+      <div className="container mx-auto px-4 relative z-10">
+        <h2 className="text-3xl font-bold text-center mb-12 text-white">
           Free Community Classes
         </h2>
-        
+
         <div className="grid md:grid-cols-2 gap-8">
           {classes.map((cls) => (
-            <Card key={cls.title}>
+            <Card key={cls.title} className="bg-white/90 backdrop-blur-sm">
               <CardHeader>
                 <img
                   src={cls.image}
