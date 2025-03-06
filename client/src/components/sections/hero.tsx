@@ -15,7 +15,17 @@ export default function Hero() {
           src="/assets/20250305_1625_Sunset_Yoga_Serenity_remix_01jnmdfzg0f58asmxfgq9y8fy9.mp4"
           type="video/mp4"
         />
+        <source
+          src="/assets/20250305_1625_Sunset_Yoga_Serenity_remix_01jnmdfzfvf6h8g78h2xpnjm04.mp4"
+          type="video/mp4"
+        />
       </video>
+
+      {/* Fallback background image in case video fails to load */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: 'url(/assets/DALLe-2.png)' }}
+      />
 
       <div className="absolute inset-0 bg-black/40" />
 
