@@ -18,22 +18,21 @@ const classes = [
 
 export default function FreeClasses() {
   return (
-    <section className="relative py-16">
+    <section className="relative py-16 min-h-[80vh]">
       {/* Background Video */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden">
+      <div className="absolute inset-0 w-full h-full overflow-hidden bg-gray-900">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
         >
           <source
             src="/assets/20250305_1625_Sunset_Yoga_Serenity_remix_01jnmdfzfvf6h8g78h2xpnjm04.mp4"
             type="video/mp4"
           />
         </video>
-        <div className="absolute inset-0 bg-black/60" />
       </div>
 
       {/* Content */}
