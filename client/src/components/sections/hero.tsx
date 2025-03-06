@@ -21,9 +21,9 @@ export default function Hero() {
         />
       </video>
 
-      {/* Fallback background image in case video fails to load */}
+      {/* Fallback background image with reduced opacity */}
       <div 
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{ backgroundImage: 'url(/assets/DALLe-2.png)' }}
       />
 
