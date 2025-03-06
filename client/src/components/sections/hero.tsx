@@ -12,13 +12,13 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source
-          src="https://player.vimeo.com/external/369039090.sd.mp4?s=e89a28849162c59d952e5af37ba84b8e55d69042&profile_id=164&oauth2_token_id=57447761"
+          src="/assets/20250305_1625_Sunset_Yoga_Serenity_remix_01jnmdfzg0f58asmxfgq9y8fy9.mp4"
           type="video/mp4"
         />
       </video>
-      
+
       <div className="absolute inset-0 bg-black/40" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
